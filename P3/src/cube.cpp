@@ -40,4 +40,5 @@ Cube::Cube(float l){
 	};
 
 	generateNormals();
+	applyMaterial();
 }
