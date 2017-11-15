@@ -7,29 +7,7 @@
 
 //-----------------------------------------------------------------------//
 
-Object3d::Object3d(){
-/*
-  GLfloat ambient[]={0.2125, 0.1275, 0.054, 1.0},
-					diffuse[]={0.714, 0.4284, 0.18144, 1.0},
-					specular[]={0.393548, 0.271906, 0.166721, 1.0},
-					shininess[]= {25.6};
-  GLfloat ambient[]={0.24725, 0.2245, 0.0645, 1.0},
-					diffuse[]={0.34615, 0.3143, 0.0903, 1.0},
-					specular[]={0.797357, 0.723991, 0.208006, 1.0},
-					shininess[]= {83.2};
-
-          */
-  GLfloat ambient[]={1.0, 1.0, 1.0, 1.0},
-					diffuse[]={1.0, 0.5, 0.5, 1.0},
-					specular[]={0.797357, 0.723991, 0.608006, 1.0},
-					shininess[]= {83.2};
-
-	glMaterialfv(GL_FRONT, GL_AMBIENT, ambient);
-	glMaterialfv(GL_FRONT, GL_DIFFUSE, diffuse);
-	glMaterialfv(GL_FRONT, GL_SPECULAR, specular);
-	glMaterialfv(GL_FRONT, GL_SHININESS, shininess);
-
-}
+Object3d::Object3d(){}
 
 //-----------------------------------------------------------------------//
 
@@ -37,7 +15,7 @@ void Object3d::drawObject(){
   glBegin(GL_TRIANGLES);
   for(int i=0; i<triangles.size(); i++)
     for(int j=0; j<3; j++){
-      glNormal3fv((GLfloat *) &normals[i][j]);
+      glNormal3fv((GLfloat *) &normals[i][0]);
       glVertex3fv((GLfloat *) &vertices[triangles[i][j]]);
     }
   glEnd();
@@ -73,6 +51,7 @@ void Object3d::drawSolid(){
 //-----------------------------------------------------------------------//
 
 void Object3d::drawSolidChess(){
+  glPolygonMode(GL_FRONT, GL_FILL);
   glBegin(GL_TRIANGLES);
   for(int i=0; i<triangles.size(); i+=2){
     glColor3f(0,0,0);               // Negro
@@ -124,10 +103,16 @@ void Object3d::generateNormals(){
 
 //-----------------------------------------------------------------------//
 
-void Object3d::drawNormals(){
-  glColor3f(1,0.44,0);
-  glBegin(GL_POINTS);
-  for(int i=0; i<normals.size(); i++)
-    glVertex3fv((GLfloat *) &normals[i]);
-  glEnd();
+// TODO Work In Progress
+void Object3d::applyMaterial(){
+  // Material cromado http://devernay.free.fr/cours/opengl/materials.html
+  GLfloat ambient[]={0.25, 0.25, 0.25, 1.0},
+					diffuse[]={0.4, 0.4, 0.4, 1.0},
+					specular[]={0.774597, 0.774597, 0.774597, 1.0},
+					shininess= 0.6*128;
+
+	glMaterialfv(GL_FRONT, GL_AMBIENT, ambient);
+	glMaterialfv(GL_FRONT, GL_DIFFUSE, diffuse);
+	glMaterialfv(GL_FRONT, GL_SPECULAR, specular);
+	glMaterialf(GL_FRONT, GL_SHININESS, shininess);
 }

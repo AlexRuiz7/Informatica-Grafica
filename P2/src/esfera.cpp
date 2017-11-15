@@ -61,4 +61,6 @@ Esfera::Esfera(int rY, float r) {
   revY = rY;
   generateProfile();
   generatePLY();
+  generateNormals();
+  //applyMaterial();
 }

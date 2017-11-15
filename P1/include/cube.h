@@ -16,8 +16,8 @@
 class Cube : public Object3d {
 public:
   /**
-   * Constructor de la clase Cube. Construye el objeto inicializando
-   * los vectores vertices y triangles .
+   * @brief Constructor de la clase Cube.
+   * Construye el objeto inicializando los vectores vertices y triangles.
    *
    * @param l Lado de las aristas del objeto. Por defecto l=1.
    * @see vertices

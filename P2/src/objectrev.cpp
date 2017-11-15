@@ -16,7 +16,7 @@ ObjectRev::ObjectRev(string file, int perfiles, float angulo_min, float angulo_m
   openPLY(file);
   generateModel();
   generateNormals();
-  applyMaterial();
+  //applyMaterial();
 }
 
 //-----------------------------------------------------------------------//

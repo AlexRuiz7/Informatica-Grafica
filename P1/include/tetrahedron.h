@@ -16,9 +16,8 @@
 class Tetrahedron : public Object3d {
 public:
   /**
-   * @brief
-   * Constructor de la clase Tetrahedron. Construye el objeto incializando
-   * los vectores vertices y triangles
+   * @brief Constructor de la clase Tetrahedron.
+   * Construye el objeto incializando los vectores vertices y triangles.
    *
    * @param l Lado de las aristas del objeto. Por defecto l=1.
    * @see vertices

@@ -19,7 +19,7 @@
 class Object3d{
 protected:
   /**
-   * Vector de vértices que define al objeto. Cada vértice cotiene las coordenadas
+   * Vector de vértices que define al objeto. Cada vértice contiene las coordenadas
    * x,y,z que componen un punto en el espacio.
    */
   vector<_vertex3f> vertices;
@@ -33,15 +33,13 @@ protected:
 
 public:
   /**
-   * @brief
-   * Constructor de los objetos Object3d
+   * @brief Constructor de los objetos Object3d
    */
   Object3d();
 
   /**
-   * @brief
-   * Dibuja el objeto en según el modo de visualización activo. Esta función es
-   * invocada por las funciones siguientes:
+   * @brief Dibuja el objeto en según el modo de visualización activo.
+   * Esta función es invocada por las funciones siguientes:
    *
    * @see drawPoints
    * @see drawEdges
@@ -51,26 +49,22 @@ public:
   void drawObject();
 
   /**
-   * @brief
-   * Dibuja el objeto en modo puntos
+   * @brief Dibuja el objeto en modo puntos
    */
   void drawPoints();
 
   /**
-   * @brief
-   * Dibuja el objeto en modo aristas.
+   * @brief Dibuja el objeto en modo aristas.
    */
   void drawEdges();
 
   /**
-   * @brief
-   * Dibuja el objeto en modo sólido.
+   * @brief Dibuja el objeto en modo sólido.
    */
   void drawSolid();
 
   /**
-   * @brief
-   * Dibuja el objeto en modo ajedrez.
+   * @brief Dibuja el objeto en modo ajedrez.
    */
   void drawSolidChess();
 
@@ -136,9 +130,9 @@ public:
   void generateNormals();
 
   /**
-   * @brief Dibujo puntos que representan los vectores normales de la superficie.
+   * @brief Aplica el material definido al objeto.
    */
-  void drawNormals();
+  void applyMaterial();
 };
 
 #endif

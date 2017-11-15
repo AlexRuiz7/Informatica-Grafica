@@ -15,5 +15,5 @@ ObjectPLY::ObjectPLY(string file){
   reader.close();
 
   generateNormals();
-  applyMaterial();
+  //applyMaterial();
 }
