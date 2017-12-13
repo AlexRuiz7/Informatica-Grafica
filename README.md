@@ -41,7 +41,14 @@ tercer curso del grado de Ingeniería Informática de la Universidad de Granada.
 
 ## Práctica 4: Iluminación y Texturas
 
-  En desarrollo. (Iluminación implementada desde la práctica 1).
+  Aplicación de iluminación y texturas a los modelos para incrementar el realismo.
+
+  Para la iluminación es necesario generar las normales de los objetos, tanto de sus trángulos como de sus vértices. Luego, se definen materiales que se aplicarán a los objetos, así como las luces que intervendrán en las escena.
+
+  En la práctica se han implementado 3 materiales que se pueden aplicar a los objetos en tiempo de ejecución (cromo, jade y oro) y 3 luces, dos móviles (una roja y otra amarilla) y una fija de color blanco. Las luces móviles rotan alrededor del objeto, horizontal o verticalmente. También pueden alejarse y acercarse al origen. Todo esto también en tiempo de ejecución.
+
+  En cuanto a la textura, se ha creado un nuevo objeto denominado Tablero, en el que se puede aplicar una textura (cualquier imagen en formato jpg). Se generan las coordenadas de textura mientras se construye el objeto. La textura puede activarse como cualquier otro modo de visulaización. Para una visualización óptima se debe visualizar en modo iluminación, activar el sombreado de Gouraud y, por supueto, en modo sólido/relleno.
+
 
 ## Práctica 5: Interacción
 
@@ -56,6 +63,10 @@ tercer curso del grado de Ingeniería Informática de la Universidad de Granada.
     * L: activa/desactiva el modo de dibujado alambre.
     * S: activa/desactiva el modo de dibujado por superficie.
     * C: activa/desactiva el modo de dibujado ajedrez.
+
+  * Cambiar objetos:
+    * F1: cambia al objeto anterior.
+    * F2: cambia al siguiente objeto.
 
   * Control de la cámara:
     * RePag: aumenta el zoom.
@@ -79,7 +90,7 @@ tercer curso del grado de Ingeniería Informática de la Universidad de Granada.
       * :two:: mueve el objeto positivamente en el eje Z.   (Z+1)
       * :three:: mueve el objeto en la diagonal XZ.         (X+1, Z+1)
       * :four:: mueve el objeto negativamente en el eje X.  (X-1)
-      * :five:: mueve el objeto positivamente en el eje Y.  (Y+1)      
+      * :five:: mueve el objeto positivamente en el eje Y.  (Y+1)
       * :six:: mueve el objeto positivamente en el eje X.   (X+1)
       * :seven:: mueve el objeto en la diagonal XZ.         (X-1, Z-1)
       * :eight:: mueve el objeto negativamente en el eje Z. (Z-1)
@@ -87,7 +98,25 @@ tercer curso del grado de Ingeniería Informática de la Universidad de Granada.
 
   * Iluminación:
     * L: activa/desactiva el modo iluminación.
-    * O: activa/desactiva la luz.
+    * M: alterna entre sombreado plano o sombreado de Gouraud.
+    * G: activa/desactiva la rotación de la luz posicional.
+    * H: alterna la rotación de la luz posicional entre horizontal o vertical.
+    * B: acerca la luz posicional al origen.
+    * N: aleja la luz posicional del origen.
+    * F: activa/desactiva la rotación de la luz direccional.
+    * V: alterna la rotación de la luz direccional entre horizontal o vertical.
+    * U: acerca la luz direccional al origen.
+    * I: aleja la luz direccional del origen.
+    * F3: activa/desactiva la luz direccional móvil (roja).
+    * F4: activa/desactiva la luz posicional (amarilla).
+    * F5: activa/desactiva la luz direccional fija (blanca).
+    * F6: aplica material al objeto (cromo).
+    * F7: aplica material al objeto (jade).
+    * F8: aplica material al objeto (oro).
+
+  * Textura:
+    * X: activa/desactiva la textura. (Solo implementado en tablero)
+         (Activar primero modo iluminación, modo sólido y suavizado de Gouraud)
 
 ### Controles específicos de la práctica 3
 
