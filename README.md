@@ -5,9 +5,9 @@ tercer curso del grado de Ingeniería Informática de la Universidad de Granada.
 
 ## Requisitos y dependencias
 
-  * OpenGL
-  * GLUT
-  * GLU
+  * OpenGL (Open Graphics Library)
+  * GLUT (OpenGL Utility Toolkit)
+  * GLU (OpenGL Library Utility)
 
   El comando `apt-get install freeglut3-dev` debería instalar las tres librerías
   mencionadas anteriormente.
@@ -71,19 +71,19 @@ tercer curso del grado de Ingeniería Informática de la Universidad de Granada.
       * T: activa/desactiva la rotación en el eje Y.
       * Y: activa/desactiva la rotación en el eje Z.
     * Escalados:
-      * +: aumenta el objeto.
-      * -: reduce el objeto.
+      * :heavy_plus_sign:: aumenta el objeto.
+      * :heavy_minus_sign:: reduce el objeto.
     * Traslaciones:
-      * 0: mueve el objeto negativamente en el eje Y.   (Y-1)
-      * 1: mueve el objeto en la diagonal XZ.           (X-1, Z+1)
-      * 2: mueve el objeto positivamente en el eje Z.   (Z+1)
-      * 3: mueve el objeto en la diagonal XZ.           (X+1, Z+1)
-      * 4: mueve el objeto negativamente en el eje X.   (X-1)
-      * 5: mueve el objeto positivamente en el eje Y.   (Y+1)      
-      * 6: mueve el objeto positivamente en el eje X.   (X+1)
-      * 7: mueve el objeto en la diagonal XZ.           (X-1, Z-1)
-      * 8: mueve el objeto negativamente en el eje Z.   (Z-1)
-      * 9: mueve el objeto en la diagonal XZ.           (X+1, Z-1)
+      * :zero:: mueve el objeto negativamente en el eje Y.  (Y-1)
+      * :one:: mueve el objeto en la diagonal XZ.           (X-1, Z+1)
+      * :two:: mueve el objeto positivamente en el eje Z.   (Z+1)
+      * :three:: mueve el objeto en la diagonal XZ.         (X+1, Z+1)
+      * :four:: mueve el objeto negativamente en el eje X.  (X-1)
+      * :five:: mueve el objeto positivamente en el eje Y.  (Y+1)      
+      * :six:: mueve el objeto positivamente en el eje X.   (X+1)
+      * :seven:: mueve el objeto en la diagonal XZ.         (X-1, Z-1)
+      * :eight:: mueve el objeto negativamente en el eje Z. (Z-1)
+      * :nine:: mueve el objeto en la diagonal XZ.          (X+1, Z-1)
 
   * Iluminación:
     * L: activa/desactiva el modo iluminación.
@@ -91,7 +91,7 @@ tercer curso del grado de Ingeniería Informática de la Universidad de Granada.
 
 ### Controles específicos de la práctica 3
 
-  * J: aumenta la velocidad de rotación de regulador de Watt.
+  * J: aumenta la velocidad de rotación del regulador de Watt.
   * k: reduce la velocidad de rotación del regulador de Watt.
 
 ## Notas adicionales

@@ -1,0 +1,68 @@
+## Mapa de teclas
+
+### Controles generales
+
+  * Modos de visualización:
+    * P: activa/desactiva el modo de dibujado por puntos.
+    * L: activa/desactiva el modo de dibujado alambre.
+    * S: activa/desactiva el modo de dibujado por superficie.
+    * C: activa/desactiva el modo de dibujado ajedrez.
+
+  * Cambiar objetos:
+    * F1: cambia al objeto anterior.
+    * F2: cambia al siguiente objeto.
+
+  * Control de la cámara:
+    * RePag: aumenta el zoom.
+    * AvPag: reduce el zoom.
+    * :arrow_up:: mueve la cámara hacia arriba.
+    * :arrow_down:: mueve la cámara hacia abajo.
+    * :arrow_left:: mueve la cámara hacia la izquierda.
+    * :arrow_right:: mueve la cámara hacia la derecha.
+
+  * Transformaciones:
+    * Rotaciones:
+      * R: activa/desactiva la rotación en el eje X.
+      * T: activa/desactiva la rotación en el eje Y.
+      * Y: activa/desactiva la rotación en el eje Z.
+    * Escalados:
+      * :heavy_plus_sign:: aumenta el objeto.
+      * :heavy_minus_sign:: reduce el objeto.
+    * Traslaciones:
+      * :zero:: mueve el objeto negativamente en el eje Y.  (Y-1)
+      * :one:: mueve el objeto en la diagonal XZ.           (X-1, Z+1)
+      * :two:: mueve el objeto positivamente en el eje Z.   (Z+1)
+      * :three:: mueve el objeto en la diagonal XZ.         (X+1, Z+1)
+      * :four:: mueve el objeto negativamente en el eje X.  (X-1)
+      * :five:: mueve el objeto positivamente en el eje Y.  (Y+1)
+      * :six:: mueve el objeto positivamente en el eje X.   (X+1)
+      * :seven:: mueve el objeto en la diagonal XZ.         (X-1, Z-1)
+      * :eight:: mueve el objeto negativamente en el eje Z. (Z-1)
+      * :nine:: mueve el objeto en la diagonal XZ.          (X+1, Z-1)
+
+  * Iluminación:
+    * L: activa/desactiva el modo iluminación.
+    * M: alterna entre sombreado plano o sombreado de Gouraud.
+    * G: activa/desactiva la rotación de la luz posicional.
+    * H: alterna la rotación de la luz posicional entre horizontal o vertical.
+    * B: acerca la luz posicional al origen.
+    * N: aleja la luz posicional del origen.
+    * F: activa/desactiva la rotación de la luz direccional.
+    * V: alterna la rotación de la luz direccional entre horizontal o vertical.
+    * U: acerca la luz direccional al origen.
+    * I: aleja la luz direccional del origen.
+    * F3: activa/desactiva la luz direccional móvil (roja).
+    * F4: activa/desactiva la luz posicional (amarilla).
+    * F5: activa/desactiva la luz direccional fija (blanca).
+    * F6: aplica material al objeto (cromo).
+    * F7: aplica material al objeto (jade).
+    * F8: aplica material al objeto (oro).
+
+  * Textura:
+    * X: activa/desactiva la textura. (Solo implementado en tablero)
+         (Activar primero modo iluminación, modo sólido y suavizado de Gouraud)
+
+### Controles específicos de la práctica 3
+
+  * J: aumenta la velocidad de rotación del regulador de Watt.
+  * k: reduce la velocidad de rotación del regulador de Watt.
