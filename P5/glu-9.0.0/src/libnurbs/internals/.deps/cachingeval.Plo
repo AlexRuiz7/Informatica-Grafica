@@ -1,0 +1,7 @@
+src/libnurbs/internals/cachingeval.lo: \
+ src/libnurbs/internals/cachingeval.cc /usr/include/stdc-predef.h \
+ src/libnurbs/internals/cachingeval.h
+
+/usr/include/stdc-predef.h:
+
+src/libnurbs/internals/cachingeval.h:

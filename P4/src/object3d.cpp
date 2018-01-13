@@ -4,7 +4,7 @@
 
 #include <GL/glut.h>
 #include "../include/object3d.h"
-#include "../cImg/CImg.h"
+#include "../include/CImg.h"
 
 //-----------------------------------------------------------------------//
 

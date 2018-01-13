@@ -45,9 +45,9 @@ tercer curso del grado de Ingeniería Informática de la Universidad de Granada.
 
   Para la iluminación es necesario generar las normales de los objetos, tanto de sus trángulos como de sus vértices. Luego, se definen materiales que se aplicarán a los objetos, así como las luces que intervendrán en las escena.
 
-  En la práctica se han implementado 3 materiales que se pueden aplicar a los objetos en tiempo de ejecución (cromo, jade y oro) y 3 luces, dos móviles (una roja y otra amarilla) y una fija de color blanco. Las luces móviles rotan alrededor del objeto, horizontal o verticalmente. También pueden alejarse y acercarse al origen. Todo esto también en tiempo de ejecución.
+  En la práctica se han implementado 3 materiales que se pueden aplicar a los objetos en tiempo de ejecución (cromo, jade y oro) y 3 luces, dos móviles (una roja y otra amarilla) y una fija de color blanco. Las luces móviles rotan alrededor del objeto, horizontal o verticalmente. También pueden alejarse y acercarse al origen. Todo en tiempo de ejecución.
 
-  En cuanto a la textura, se ha creado un nuevo objeto denominado Tablero, en el que se puede aplicar una textura (cualquier imagen en formato jpg). Se generan las coordenadas de textura mientras se construye el objeto. La textura puede activarse como cualquier otro modo de visulaización. Para una visualización óptima se debe visualizar en modo iluminación, activar el sombreado de Gouraud y, por supueto, en modo sólido/relleno.
+  En cuanto a la textura, se ha creado un nuevo objeto denominado Tablero, en el que se puede aplicar una textura (cualquier imagen en formato jpg). Se generan las coordenadas de textura mientras se construye el objeto. La textura puede activarse como cualquier otro modo de visualización. Para una visualización óptima se debe visualizar en modo iluminación, activar el sombreado de Gouraud y, por supuesto, en modo sólido/relleno.
 
 
 ## Práctica 5: Interacción
@@ -122,6 +122,14 @@ tercer curso del grado de Ingeniería Informática de la Universidad de Granada.
 
   * J: aumenta la velocidad de rotación del regulador de Watt.
   * k: reduce la velocidad de rotación del regulador de Watt.
+
+### Control de la cámara con el ratón. Práctica 3
+
+  * Rueda del ratón: zoom de la cámara.
+  * Botón de la rueda: alterna entre proyección paralela y perspectiva.
+  * Botón derecho (mantenido): mueve la cámara siguiendo el movimiento del ratón mientras está mantenido.
+  * Botón izquierdo (click): selección de objeto (no implementado).
+
 
 ## Notas adicionales
 
