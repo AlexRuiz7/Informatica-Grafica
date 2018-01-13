@@ -124,7 +124,7 @@ tercer curso del grado de Ingeniería Informática de la Universidad de Granada.
   * J: aumenta la velocidad de rotación del regulador de Watt.
   * k: reduce la velocidad de rotación del regulador de Watt.
 
-### Control de la cámara con el ratón. Práctica 3
+### Control de la cámara con el ratón. Práctica 5
 
   * Rueda del ratón: zoom de la cámara.
   * Botón de la rueda: alterna entre proyección paralela y perspectiva.
