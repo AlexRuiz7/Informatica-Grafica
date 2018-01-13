@@ -50,9 +50,10 @@ tercer curso del grado de Ingeniería Informática de la Universidad de Granada.
   En cuanto a la textura, se ha creado un nuevo objeto denominado Tablero, en el que se puede aplicar una textura (cualquier imagen en formato jpg). Se generan las coordenadas de textura mientras se construye el objeto. La textura puede activarse como cualquier otro modo de visualización. Para una visualización óptima se debe visualizar en modo iluminación, activar el sombreado de Gouraud y, por supuesto, en modo sólido/relleno.
 
 
-## Práctica 5: Interacción
+## Práctica 5: Interacción y eventos de ratón
 
-  En desarrollo.
+  En esta práctica se implementa el control e interacción con la escena mediante
+  el ratón, haciendo uso de los eventos de ratón y las funcionalidades de GLU.
 
 ## Mapa de teclas
 
